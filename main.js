@@ -4,6 +4,7 @@
         if(window.pageYOffset >= document.body.offsetHeight / 3){
             slider.style.bottom = 0;
         }
+        console.log(document.body.offsetHeight)
     }
     window.addEventListener('scroll', showSlide)
 
