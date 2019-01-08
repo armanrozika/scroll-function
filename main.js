@@ -1,10 +1,11 @@
 (function slider(){
     let slider = document.querySelector('.slider');
     function showSlide(){
+        console.log(document.body.offsetHeight)
         if(window.pageYOffset >= document.body.offsetHeight / 3){
             slider.style.bottom = 0;
         }
-        console.log(document.body.offsetHeight)
+        
     }
     window.addEventListener('scroll', showSlide)
 
